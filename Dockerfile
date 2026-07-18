@@ -20,10 +20,10 @@ RUN curl -L \
 
 RUN chmod +x /app/x-ui
 
-COPY start.sh /app/start.sh
+COPY install.sh /app/install.sh
 
-RUN chmod +x /app/start.sh
+RUN chmod +x /app/install.sh
 
 EXPOSE 2053
 
-CMD ["/app/start.sh"]
+CMD ["/app/install.sh"]
